@@ -34,4 +34,6 @@ git add README.md
 
 git commit -m "提交说明"
 
-git push -u python-praction master
+git push python-practice master
+
+git pull python-practice master
