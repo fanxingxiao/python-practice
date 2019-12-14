@@ -1,0 +1,48 @@
+学python目的，使用python写脚本python爬虫。
+附加选项，自动化，python数据分析。
+
+总纲
+	廖雪峰python教程
+	骆昊 100天python
+
+入门
+
+	Python编程：从入门到实践
+实践
+
+	Python编程快速上手 让繁琐工作自动化
+
+进阶
+
+	Python核心编程 第3版
+	流畅的python
+
+规范
+
+	编写高质量代码：改善python程序的91个建议
+	编写高质量python代码的59个有效方法
+
+测试
+	Python Web开发：测试驱动方法
+	挑战编程技能：57道程序员功力测试题
+
+数据结构
+
+	数据结构与算法 Python语言描述
+
+爬虫
+	Python网络数据采集
+	Python3网络爬虫开发实战
+	
+视频
+	入门
+		Python3入门与进阶视频
+		极客时间 python
+	进阶
+		Python操作三大主流数据库
+		Python进阶强化训练
+		Python高效编程技巧实战
+	爬虫
+		崔庆才视频
+		python爬虫App
+		LXF大神带你玩转Python爬虫实战
