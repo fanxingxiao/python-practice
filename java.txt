@@ -1,0 +1,30 @@
+学Java目的，做web开发，涉及爬虫。
+
+总纲
+	廖雪峰Java教程（视频）
+	阿里巴巴代码规约手册
+
+入门
+	廖雪峰Java教程（视频）
+	how2j
+	牛客网
+基础
+
+	Java编程的逻辑 -> java编程思想
+	Java核心技术卷I
+	Java核心技术卷II	
+
+实践
+	leetcode
+	clear code
+
+进阶	
+	spring
+	框架
+	Socket网络编程进阶与实战完整无秘
+	HBase+SpringBoot实战分布式文件存储
+
+数据结构
+
+	数据结构与算法Java实现
+
