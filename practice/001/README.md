@@ -10,14 +10,21 @@
 例如：
 
 def people(name, age, sex):
+
     print("姓名：", name)
+    
     print("\n年龄", age)
+    
     print("\n性别", sex)
 
 kwargs = {
+
     'name': 'xiaomi',
+    
     'age': 20,
+    
     'sex': '男'
+    
 }
 
 people(**kwargs)
