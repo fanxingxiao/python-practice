@@ -12,7 +12,8 @@
 
 	Java编程的逻辑 -> java编程思想
 	Java核心技术卷I
-	Java核心技术卷II	
+	Java核心技术卷II
+	effective-java	
 
 实践
 	leetcode
@@ -23,6 +24,8 @@
 	框架
 	Socket网络编程进阶与实战完整无秘
 	HBase+SpringBoot实战分布式文件存储
+	Java技术手册
+	Java8实战
 
 数据结构
 
