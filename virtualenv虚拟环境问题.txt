@@ -15,3 +15,13 @@ pip install --upgrade setuptools
 
 不带第三方包的‘干净’的python环境
 --no-site-packages
+
+启动虚拟环境
+linux
+source .venvs/project/bin/activate
+windows
+source .venvs/project/Scripts/activate
+
+退出环境
+
+deactivate
