@@ -1,0 +1,17 @@
+virtualenv --system-site-packages .venvs/project
+
+报错：
+OSError: Command D:\test\scrapingEnc\Scripts\python.exe - setuptools pip wheel failed with error code 2
+
+解决方案：
+更新pip、setuptools。
+
+pip install --upgrade pip
+pip install --upgrade setuptools
+
+
+复制已经安装到系统环境中的第三方包
+--system-site-packages
+
+不带第三方包的‘干净’的python环境
+--no-site-packages
