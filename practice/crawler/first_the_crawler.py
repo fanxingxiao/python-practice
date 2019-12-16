@@ -1,72 +1,42 @@
 #!/usr/bin/env python 
 # -*- coding: utf-8 -*-
 
-from urllib.request import urlopen
+from urllib import request
+from fake_useragent import UserAgent
 from urllib.error import HTTPError
 from bs4 import BeautifulSoup
 
-'''
-    网址不存在异常
-   
-    下面代码避免上叙的错误
-'''
-
-# try:
-    # html = urlopen('https://www.baidu.com/1')
-    # if html is not None:
-        # print(html.read())
-# except HTTPError as e:
-    # print(e)
-
-'''
-    html中没有nonExistingTag标签 - 返回None对象
-    再调用None对象的子标签 - 返回AttributeError异常
-    
-    下面代码避免上叙的错误
-'''
-
-# bsObj = BeautifulSoup(html.read(), features='lxml')
-# try:
-    # badContent = bsObj.nonExistingTag.anotherTag
-# except AttributeError as e:
-    # print("Tag was not found")
-# else:
-    # if badContent == None:
-        # print ("Tag was not found")
-    # else:
-        # print(badContent)
-        
-'''
-    本地html文本测试
-'''
-
-# with open('C:\\Users\\admin\\Desktop\\html\\1.html', 'rb') as text:
-    # # print(text.read().decode('utf-8'))
-    # bsObj = BeautifulSoup(text.read().decode('utf-8'), features="lxml")
-    # print(bsObj.title)
-
-'''
-    综合上面两种异常，下面代码避免上叙错误
-'''
+# '''
+    # 综合上面两种异常，下面代码避免上叙错误
+# '''
 
 def getTitle(url):
+    ua = UserAgent()
+    # print(type(ua.random))
+    headers = {
+        'User-Agent': ua.random,
+    }
     try:
-        html = urlopen(url)
+        rq = request.Request(url, headers=headers, method='GET')
+        response = request.urlopen(rq)
+        html = response.read().decode('utf-8')
     except HTTPError as e:
         return None
     try:
-        bsObj = BeautifulSoup(html.read(), features='lxml')
+        bsObj = BeautifulSoup(html, features='lxml')
         title = bsObj.title
     except AttributeError as e:
         return None
     return title
 
-'''
-    参数过多，或者希望参数名和参数对应，可以考虑使用**kwargs
-'''
+# '''
+    # 参数过多，或者希望参数名和参数对应，可以考虑使用**kwargs
+# '''
 
 kwargs = {
     'url': 'https://www.baidu.com/',
+    # 'url': 'https://pixabay.com/zh/',
+    # 'url': 'https://pixabay.com/zh/images/download/milky-way-2695569.jpg?attachment',
 }
 
 title = getTitle(**kwargs)
