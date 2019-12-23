@@ -3,3 +3,17 @@
 3.服务器如何实现消息推送，websocket协议的作用
 4.通过requests去下载视频，如优酷视频，能实现吗？为什么？
 5.HTTP协议的keep-alive字段的作用
+
+python import re
+python import json
+python import socket
+python import threading
+python from collections import defaultdict
+python try excepy
+
+decode
+encode
+
+json.dumps()
+json.loads()
+
