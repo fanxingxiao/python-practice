@@ -17,3 +17,6 @@ encode
 json.dumps()
 json.loads()
 
+反序列化
+json有自己的数据类型，
+python把json格式的字符串转换成编程语言自己的数据类型过程，就叫反序列化。
