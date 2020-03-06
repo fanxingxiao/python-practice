@@ -4,12 +4,6 @@
 import os
 import time
 
-ren = ""
-tag = ""
-typ = ""
-new_name = ""
-split_list = ""
-
 system = os.name
 dirs = os.listdir('.')
 
@@ -19,7 +13,7 @@ for dir in dirs[:]:
     if os.path.isdir('./%s' % dir):
         continue
     if '_1_t(' in dir:
-	    continue
+	continue
     if 'input_sr' in dir:
         tag = 'input_sr'
     elif ('output' in dir) or ('output_sr' in dir):
