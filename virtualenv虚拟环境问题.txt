@@ -23,8 +23,8 @@ windows
 source .venvs/project/Scripts/activate
 
 退出环境
-
 deactivate
+
 
 使用virtualenvwrapper创建管理虚拟环境
 
