@@ -1,27 +1,56 @@
 virtualenv --system-site-packages .venvs/project
 
-±¨´í£º
+æŠ¥é”™ï¼š
 OSError: Command D:\test\scrapingEnc\Scripts\python.exe - setuptools pip wheel failed with error code 2
 
-½â¾ö·½°¸£º
-¸üĞÂpip¡¢setuptools¡£
+è§£å†³æ–¹æ¡ˆï¼š
+æ›´æ–°pipã€setuptoolsã€‚
 
 pip install --upgrade pip
 pip install --upgrade setuptools
 
 
-¸´ÖÆÒÑ¾­°²×°µ½ÏµÍ³»·¾³ÖĞµÄµÚÈı·½°ü
+å¤åˆ¶å·²ç»å®‰è£…åˆ°ç³»ç»Ÿç¯å¢ƒä¸­çš„ç¬¬ä¸‰æ–¹åŒ…
 --system-site-packages
 
-²»´øµÚÈı·½°üµÄ¡®¸É¾»¡¯µÄpython»·¾³
+ä¸å¸¦ç¬¬ä¸‰æ–¹åŒ…çš„â€˜å¹²å‡€â€™çš„pythonç¯å¢ƒ
 --no-site-packages
 
-Æô¶¯ĞéÄâ»·¾³
+å¯åŠ¨è™šæ‹Ÿç¯å¢ƒ
 linux
 source .venvs/project/bin/activate
 windows
 source .venvs/project/Scripts/activate
 
-ÍË³ö»·¾³
+é€€å‡ºç¯å¢ƒ
 
 deactivate
+
+ä½¿ç”¨virtualenvwrapperåˆ›å»ºç®¡ç†è™šæ‹Ÿç¯å¢ƒ
+
+å®˜æ–¹æ–‡æ¡£
+https://virtualenvwrapper.readthedocs.io/en/latest/install.html
+
+windows
+pip install virtualenvwrapper-win
+
+å…ˆé…ç½®ä¸€ä¸ªç¯å¢ƒå˜é‡ï¼Œè¿™æ ·åˆ›å»ºçš„è™šæ‹Ÿç¯å¢ƒé»˜è®¤éƒ½ä¼šåˆ›å»ºåœ¨ç¯å¢ƒå˜é‡ä¸‹
+WORKON_HOME='D:\tool\pythonVirtualenv'
+
+åˆ›å»ºè™šæ‹Ÿç¯å¢ƒ
+mkvirtualenv [virtualenvåå­—]
+
+ä½¿ç”¨æŒ‡å®šç‰ˆæœ¬çš„pythonå®‰è£…è™šæ‹Ÿç¯å¢ƒ
+mkvirtualenv --python=[pythonçš„å®‰è£…ç›®å½•/python.exe]
+
+æŸ¥çœ‹æ‰€æœ‰ç¯å¢ƒ
+workon
+
+è¿›å…¥æŒ‡å®šç¯å¢ƒï¼Œå¦‚ï¼štemp
+workon temp
+
+é€€å‡ºç¯å¢ƒ
+deactivate
+
+åˆ é™¤ç¯å¢ƒ
+rmvirtualenv [virtualenvåå­—]
